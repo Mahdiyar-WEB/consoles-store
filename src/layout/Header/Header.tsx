@@ -6,10 +6,11 @@ import brandLogo from '../../assets/images/brand.svg';
 
 const Header = () => {
 
-  const offCanvasRef = useRef();
+  const offCanvasRef = useRef<HTMLDivElement | any>(null);
   const closeOffCanvas = () => {
-    if(window.innerWidth < 768){
-      offCanvasRef.current.backdrop.click()
+    if(window.innerWidth < 768 && offCanvasRef.current){
+      const offCanvas= offCanvasRef.current;
+      offCanvas.backdrop.click()
     }
   };
 
