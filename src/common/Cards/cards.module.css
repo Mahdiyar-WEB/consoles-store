@@ -1,0 +1,28 @@
+.container{
+    border-radius: 0 !important;
+}
+.image{
+    cursor: pointer;
+    border-radius: 0 !important;
+    transition: all .2s linear;
+}
+.container:hover .image{
+    transform: scale(1.1) !important;
+}
+.card_price{
+    font-size: 14px;
+}
+.card_text{
+    font-size: 16px;
+}
+@media screen and (max-width:890px) {
+    .container{
+        min-width: 200px;
+    }
+    .card_text{
+        font-size: 14px !important;
+    }
+    .card_price{
+        font-size: 13px !important;
+    }
+}

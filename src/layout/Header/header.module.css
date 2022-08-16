@@ -1,0 +1,18 @@
+.activeLink{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.offCanvas{
+    width: 45% !important;
+    transition: all .2s linear;
+}
+.navbar-shadow{
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, .2) ;
+}
+.toggleIcon:focus{
+    box-shadow: none;
+}
+@media screen and (max-width:480px) {
+    .offCanvas{
+        width: 65% !important;
+    }
+}
